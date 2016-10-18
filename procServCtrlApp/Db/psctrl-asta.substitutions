@@ -1,0 +1,40 @@
+# This file created by ./createPSdb.sh on 20160810.151551
+#
+# Macros:
+#  P            Device prefix
+#  PORT         Asyn port name
+#  SHOWOUT      Set this to 0 to disable the IOC output display
+#  MANUALSTART  Set this to # if the IOC is manually started. This changes the severity of STATUS
+#  name         Object and gui association name
+
+file procServControl.template {
+pattern {         P, PORT, SHOWOUT, MANUALSTART,              name }
+{  "sioc-asta-bkh5", "L1",     "1",          "",  "sioc-asta-bkh5" }
+{  "sioc-asta-bkh12", "L2",     "1",          "",  "sioc-asta-bkh12" }
+{  "sioc-asta-sc01", "L3",     "1",          "",  "sioc-asta-sc01" }
+{  "sioc-asta-bkh9", "L4",     "1",          "",  "sioc-asta-bkh9" }
+{  "sioc-asta-scop01", "L5",     "1",          "",  "sioc-asta-scop01" }
+{  "sioc-asta-bkh30", "L6",     "1",          "",  "sioc-asta-bkh30" }
+{  "sioc-asta-uedm", "L7",     "1",          "",  "sioc-asta-uedm" }
+{  "sioc-asta-uedmc", "L8",     "1",          "",  "sioc-asta-uedmc" }
+{  "sioc-asta-polx01", "L9",     "1",          "",  "sioc-asta-polx01" }
+{  "sioc-asta-psrv01", "L10",     "1",          "",  "sioc-asta-psrv01" }
+{  "sioc-asta-stats01", "L11",     "1",          "",  "sioc-asta-stats01" }
+{  "sioc-asta-scop02", "L12",     "1",          "",  "sioc-asta-scop02" }
+{  "sioc-asta-ada01", "L13",     "1",          "",  "sioc-asta-ada01" }
+{  "sioc-asta-lsc01", "L14",     "1",          "",  "sioc-asta-lsc01" }
+{  "sioc-asta-lsc02", "L15",     "1",          "",  "sioc-asta-lsc02" }
+{  "sioc-asta-lsc03", "L16",     "1",          "",  "sioc-asta-lsc03" }
+{  "sioc-asta-pv01", "L17",     "1",          "",  "sioc-asta-pv01" }
+{  "sioc-asta-stats02", "L18",     "1",          "",  "sioc-asta-stats02" }
+{  "sioc-asta-pv02", "L19",     "1",          "",  "sioc-asta-pv02" }
+{  "sioc-asta-pv03", "L20",     "1",          "",  "sioc-asta-pv03" }
+{  "sioc-asta-pv04", "L21",     "1",          "",  "sioc-asta-pv04" }
+{  "sioc-asta-pv05", "L22",     "1",          "",  "sioc-asta-pv05" }
+{  "sioc-asta-sc02", "L23",     "1",          "",  "sioc-asta-sc02" }
+{  "sioc-asta-dg01", "L24",     "1",          "",  "sioc-asta-dg01" }
+{  "sioc-asta-lake01", "L25",     "1",          "",  "sioc-asta-lake01" }
+{  "sioc-asta-bkh31", "L26",     "1",          "",  "sioc-asta-bkh31" }
+{  "sioc-asta-bkh32", "L27",     "1",          "",  "sioc-asta-bkh32" }
+{  "sioc-asta-sint01", "L28",     "1",          "",  "sioc-asta-sint01" }
+}

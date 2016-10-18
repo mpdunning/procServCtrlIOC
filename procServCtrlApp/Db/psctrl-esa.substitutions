@@ -1,0 +1,47 @@
+# This file created by ./createPSdb.sh on 20160830.143257
+#
+# Macros:
+#  P            Device prefix
+#  PORT         Asyn port name
+#  SHOWOUT      Set this to 0 to disable the IOC output display
+#  MANUALSTART  Set this to # if the IOC is manually started. This changes the severity of STATUS
+#  name         Object and gui association name
+
+file procServControl.template {
+pattern {         P, PORT, SHOWOUT, MANUALSTART,              name }
+{  "ioc-esa-rtms01", "L1",     "1",          "",  "ioc-esa-rtms01" }
+{  "sioc-esa-mag01", "L2",     "1",          "",  "sioc-esa-mag01" }
+{  "sioc-esa-lamb01", "L3",     "1",          "",  "sioc-esa-lamb01" }
+{  "sioc-esa-wie3", "L4",     "1",          "",  "sioc-esa-wie3" }
+{  "ioc-esa-tb02", "L5",     "1",          "",  "ioc-esa-tb02" }
+{  "sioc-esa-sc04", "L6",     "1",          "",  "sioc-esa-sc04" }
+{  "sioc-esa-wie1a", "L7",     "1",          "",  "sioc-esa-wie1a" }
+{  "sioc-esa-acs2", "L8",     "1",          "",  "sioc-esa-acs2" }
+{  "sioc-esa-sc03", "L9",     "1",          "",  "sioc-esa-sc03" }
+{  "sioc-esa-sc02", "L10",     "1",          "",  "sioc-esa-sc02" }
+{  "sioc-esa-bkh4", "L11",     "1",          "",  "sioc-esa-bkh4" }
+{  "sioc-esa-sy403", "L12",     "1",          "",  "sioc-esa-sy403" }
+{  "sioc-esa-pvs1", "L13",     "1",          "",  "sioc-esa-pvs1" }
+{  "sioc-esa-bkh21", "L14",     "1",          "",  "sioc-esa-bkh21" }
+{  "sioc-esa-acs3", "L15",     "1",          "",  "sioc-esa-acs3" }
+{  "sioc-esa-bkh22", "L16",     "1",          "",  "sioc-esa-bkh22" }
+{  "sioc-esa-cam01", "L17",     "1",          "",  "sioc-esa-cam01" }
+{  "sioc-cha-hist01", "L18",     "1",          "",  "sioc-cha-hist01" }
+{  "sioc-esa-acs4", "L19",     "1",          "",  "sioc-esa-acs4" }
+{  "sioc-esa-acs5", "L20",     "1",          "",  "sioc-esa-acs5" }
+{  "sioc-esa-bkh24", "L21",     "1",          "",  "sioc-esa-bkh24" }
+{  "sioc-esa-xym1", "L22",     "1",          "",  "sioc-esa-xym1" }
+{  "sioc-esa-daq1", "L23",     "1",          "",  "sioc-esa-daq1" }
+{  "sioc-esa-scop02", "L24",     "1",          "",  "sioc-esa-scop02" }
+{  "sioc-esa-mag02", "L25",     "1",          "",  "sioc-esa-mag02" }
+{  "sioc-esa-t523", "L26",     "1",          "",  "sioc-esa-t523" }
+{  "sioc-esa-bkh23", "L27",     "1",          "",  "sioc-esa-bkh23" }
+{  "sioc-esa-acs6", "L28",     "1",          "",  "sioc-esa-acs6" }
+{  "sioc-esa-acs7", "L29",     "1",          "",  "sioc-esa-acs7" }
+{  "sioc-esa-bkh26", "L30",     "1",          "",  "sioc-esa-bkh26" }
+{  "sioc-esa-acs8", "L31",     "1",          "",  "sioc-esa-acs8" }
+{  "sioc-esa-psrv01", "L32",     "1",          "",  "sioc-esa-psrv01" }
+{  "sioc-esa-bkh27", "L33",     "1",          "",  "sioc-esa-bkh27" }
+{  "sioc-esa-bkp01", "L34",     "1",          "",  "sioc-esa-bkp01" }
+{  "sioc-esa-bkh28", "L35",     "1",          "",  "sioc-esa-bkh28" }
+}

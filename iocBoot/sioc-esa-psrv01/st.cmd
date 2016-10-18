@@ -1,0 +1,92 @@
+#!../../bin/linux-x86_64/procServCtrl
+
+
+epicsEnvSet("EPICS_TS_MIN_WEST", '0')
+
+< envPaths
+
+cd ${TOP}
+
+dbLoadDatabase "dbd/procServCtrl.dbd"
+procServCtrl_registerRecordDeviceDriver(pdbbase)
+
+drvAsynIPPortConfigure("L1", "localhost:20011", 100, 0, 0)
+#drvAsynIPPortConfigure("L2", "localhost:20014", 100, 0, 0)
+drvAsynIPPortConfigure("L3", "localhost:20062", 100, 0, 0)
+drvAsynIPPortConfigure("L4", "localhost:20078", 100, 0, 0)
+drvAsynIPPortConfigure("L5", "localhost:20114", 100, 0, 0)
+#drvAsynIPPortConfigure("L6", "localhost:20115", 100, 0, 0)
+drvAsynIPPortConfigure("L7", "localhost:20116", 100, 0, 0)
+drvAsynIPPortConfigure("L8", "localhost:20119", 100, 0, 0)
+drvAsynIPPortConfigure("L9", "localhost:20131", 100, 0, 0)
+drvAsynIPPortConfigure("L10", "localhost:20145", 100, 0, 0)
+drvAsynIPPortConfigure("L11", "localhost:20146", 100, 0, 0)
+drvAsynIPPortConfigure("L12", "localhost:20147", 100, 0, 0)
+drvAsynIPPortConfigure("L13", "localhost:20156", 100, 0, 0)
+drvAsynIPPortConfigure("L14", "localhost:20162", 100, 0, 0)
+drvAsynIPPortConfigure("L15", "localhost:20163", 100, 0, 0)
+drvAsynIPPortConfigure("L16", "localhost:20164", 100, 0, 0)
+#drvAsynIPPortConfigure("L17", "localhost:20193", 100, 0, 0)
+#drvAsynIPPortConfigure("L18", "localhost:20195", 100, 0, 0)
+drvAsynIPPortConfigure("L19", "localhost:20197", 100, 0, 0)
+drvAsynIPPortConfigure("L20", "localhost:20200", 100, 0, 0)
+drvAsynIPPortConfigure("L21", "localhost:20220", 100, 0, 0)
+drvAsynIPPortConfigure("L22", "localhost:20221", 100, 0, 0)
+drvAsynIPPortConfigure("L23", "localhost:20231", 100, 0, 0)
+#drvAsynIPPortConfigure("L24", "localhost:20246", 100, 0, 0)
+drvAsynIPPortConfigure("L25", "localhost:20288", 100, 0, 0)
+drvAsynIPPortConfigure("L26", "localhost:20289", 100, 0, 0)
+drvAsynIPPortConfigure("L27", "localhost:20290", 100, 0, 0)
+drvAsynIPPortConfigure("L28", "localhost:20293", 100, 0, 0)
+drvAsynIPPortConfigure("L29", "localhost:20294", 100, 0, 0)
+drvAsynIPPortConfigure("L30", "localhost:20326", 100, 0, 0)
+drvAsynIPPortConfigure("L31", "localhost:20331", 100, 0, 0)
+drvAsynIPPortConfigure("L32", "localhost:20332", 100, 0, 0)
+drvAsynIPPortConfigure("L33", "localhost:20333", 100, 0, 0)
+drvAsynIPPortConfigure("L34", "localhost:20341", 100, 0, 0)
+drvAsynIPPortConfigure("L35", "localhost:20343", 100, 0, 0)
+
+#asynSetTraceMask("L1",-1,0x9)
+#asynSetTraceIOMask("L1",-1,0x2)
+
+dbLoadRecords("db/psctrl-esa.db")
+
+cd ${TOP}/iocBoot/${IOC}
+iocInit
+
+seq(procServControl,"P=ioc-esa-rtms01")
+#seq(procServControl,"P=sioc-esa-mag01")
+seq(procServControl,"P=sioc-esa-lamb01")
+seq(procServControl,"P=sioc-esa-wie3")
+seq(procServControl,"P=ioc-esa-tb02")
+#seq(procServControl,"P=sioc-esa-sc04")
+seq(procServControl,"P=sioc-esa-wie1a")
+seq(procServControl,"P=sioc-esa-acs2")
+seq(procServControl,"P=sioc-esa-sc03")
+seq(procServControl,"P=sioc-esa-sc02")
+seq(procServControl,"P=sioc-esa-bkh4")
+seq(procServControl,"P=sioc-esa-sy403")
+seq(procServControl,"P=sioc-esa-pvs1")
+seq(procServControl,"P=sioc-esa-bkh21")
+seq(procServControl,"P=sioc-esa-acs3")
+seq(procServControl,"P=sioc-esa-bkh22")
+#seq(procServControl,"P=sioc-esa-cam01")
+#seq(procServControl,"P=sioc-cha-hist01")
+seq(procServControl,"P=sioc-esa-acs4")
+seq(procServControl,"P=sioc-esa-acs5")
+seq(procServControl,"P=sioc-esa-bkh24")
+seq(procServControl,"P=sioc-esa-xym1")
+seq(procServControl,"P=sioc-esa-daq1")
+#seq(procServControl,"P=sioc-esa-scop02")
+seq(procServControl,"P=sioc-esa-mag02")
+seq(procServControl,"P=sioc-esa-t523")
+seq(procServControl,"P=sioc-esa-bkh23")
+seq(procServControl,"P=sioc-esa-acs6")
+seq(procServControl,"P=sioc-esa-acs7")
+seq(procServControl,"P=sioc-esa-bkh26")
+seq(procServControl,"P=sioc-esa-acs8")
+seq(procServControl,"P=sioc-esa-psrv01")
+seq(procServControl,"P=sioc-esa-bkh27")
+seq(procServControl,"P=sioc-esa-bkp01")
+seq(procServControl,"P=sioc-esa-bkh28")
+

@@ -1,0 +1,15 @@
+
+include $(TOP)/../../../RELEASE_SITE
+
+#TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
+
+SUPPORT=$(EPICS_SITE_TOP)/modules
+
+# Module definitions
+ASYN = $(SUPPORT)/asyn/R4.27
+BUSY = $(SUPPORT)/busy/R1.6.1
+PROCSERVCONTROL = $(SUPPORT)/procServControl/R1.9
+SEQ = $(SUPPORT)/seq/R2.2.3
+
+# EPICS Base appears last
+EPICS_BASE=$(EPICS_SITE_TOP)/base
